@@ -28,8 +28,6 @@ class _SplashViewBodyState extends State<SplashViewBody>
     navigateToHomeView();
   }
 
-
-
   @override
   void dispose() {
     // TODO: implement dispose
@@ -72,9 +70,10 @@ class _SplashViewBodyState extends State<SplashViewBody>
             .animate(textAnimationController);
     textAnimationController.forward();
   }
-    void navigateToHomeView() {
+
+  void navigateToHomeView() {
     Future.delayed(const Duration(seconds: 3), () {
-      Get.to(const HomeView(),
+      Get.to(() => const HomeView(),
           transition: Transition.fade,
           duration: const Duration(milliseconds: 250));
     });
