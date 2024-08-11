@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   flutter:
     sdk: flutter
+  font_awesome_icon_class: ^0.0.6
   get: ^4.6.6
   google_fonts: ^6.2.1
 
@@ -62,7 +63,5 @@ flutter:
     - family: Zilla Slab
       fonts:
         - asset: assets/fonts/ZillaSlab-Bold.ttf
-
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
