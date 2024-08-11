@@ -9,7 +9,8 @@ class AuthorName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       'Ahmed Eliwa',
-      style: Styles.textStyle14.copyWith(fontFamily: kfontFamily),
+      style: Styles.textStyle16
+          .copyWith(fontFamily: kfontFamily, fontStyle: FontStyle.italic),
     );
   }
 }

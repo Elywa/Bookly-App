@@ -13,7 +13,7 @@ class RatingIcon extends StatelessWidget {
       icon: const Icon(
         FontAwesomeIcons.solidStar,
         color: Color(0xffFFDD4F),
-        size: 20,
+        size: 18,
       ),
     );
   }
