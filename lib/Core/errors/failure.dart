@@ -21,7 +21,7 @@ class ServerFail extends Failure {
         return ServerFail('Bad Certificate, please try again!');
       case DioExceptionType.badResponse:
         return ServerFail.fromResponse(
-            dioError.response!.statusCode!, dioError.response!.data);
+            dioError.response!.statusCode!, dioError.response!.data); 
       case DioExceptionType.cancel:
         return ServerFail('The Request is canceled, please try again!');
       case DioExceptionType.connectionError:
