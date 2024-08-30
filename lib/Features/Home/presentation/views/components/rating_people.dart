@@ -9,7 +9,7 @@ class RatingPeople extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      '(254)',
+      '(12)',
       style: Styles.textStyle14,
     );
   }

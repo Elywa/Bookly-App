@@ -3,12 +3,12 @@ import 'package:bookly_app/contants.dart';
 import 'package:flutter/material.dart';
 
 class AuthorName extends StatelessWidget {
-  const AuthorName({super.key});
-
+  const AuthorName({super.key, required this.name});
+  final String name;
   @override
   Widget build(BuildContext context) {
     return Text(
-      'Ahmed Eliwa',
+      name,
       style: Styles.textStyle16
           .copyWith(fontFamily: kfontFamily, fontStyle: FontStyle.italic),
     );

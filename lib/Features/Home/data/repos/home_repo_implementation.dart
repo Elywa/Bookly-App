@@ -15,10 +15,10 @@ class HomeRepoImple implements HomeRepo {
       var jsonData = await api.get(
           endPoint:
               'volumes?Filtering=free-ebooks&q=subject:programming&Sorting=newest');
-      List<Map<String, dynamic>> data = jsonData['items'];
+      
 
       List<BookModel> booksList = [];
-      for (var item in data) {
+      for (var item in jsonData['items']) {
         booksList.add(BookModel.fromJson(item));
       }
 

@@ -1,19 +1,24 @@
-import 'package:bookly_app/Core/utils/assets.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class BestSellerListViewItemImage extends StatelessWidget {
   const BestSellerListViewItemImage({
     super.key,
+    required this.imageUrl,
   });
-
+  final String imageUrl;
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.circular(8),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: AspectRatio(
+        aspectRatio: 2.2 / 3,
+        child: CachedNetworkImage(
+          imageUrl: imageUrl,
+          fit: BoxFit.fill,
+          errorWidget: (context, url, error) => const Icon(Icons.error),
+        ),
       ),
-      child: Image.asset(AssetsData.listItem),
     );
   }
 }

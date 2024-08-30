@@ -20,20 +20,20 @@ class BookDetailsComponents extends StatelessWidget {
         SizedBox(
           height: 30,
         ),
-        BookNameBestSeller(),
+        // BookNameBestSeller(),
         SizedBox(
           height: 15,
         ),
-        AuthorName(),
+        // AuthorName(),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             RatingIcon(),
-            BookRating(),
+           // BookRating(),
             SizedBox(
               width: 8,
             ),
-            RatingPeople(),
+           // RatingPeople(),
           ],
         ),
         SizedBox(

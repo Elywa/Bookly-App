@@ -9,7 +9,7 @@ class BookPrice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Text(
-      '19.99 \$',
+      'Free',
       style: Styles.textStyle120,
     );
   }

@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 
 class BookRating extends StatelessWidget {
   const BookRating({
-    super.key,
+    super.key, 
   });
-
+  
   @override
   Widget build(BuildContext context) {
-    return const Text(
-      '4.8',
+    return  const Text(
+     '4.2',
       style: Styles.textStyle16,
     );
   }
