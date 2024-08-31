@@ -23,7 +23,7 @@ class FeaturedListView extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return  Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 10),
-                      child: FeaturedListItem(imageUrl: state.booksList[index].volumeInfo.imageLinks.thumbnail ),
+                      child: FeaturedListItem(imageUrl: state.booksList[index].volumeInfo.imageLinks.thumbnail  , book: state.booksList[index],),
                     );
                   }),
             ),

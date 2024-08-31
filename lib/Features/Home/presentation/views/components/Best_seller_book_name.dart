@@ -13,6 +13,7 @@ class BookNameBestSeller extends StatelessWidget {
       width: MediaQuery.of(context).size.width * .5,
       child: Text(
         bookName,
+        textAlign: TextAlign.center,
         maxLines: 2,
         overflow: TextOverflow.ellipsis,
         style: Styles.textStyle120.copyWith(
