@@ -15,9 +15,9 @@ class BookDetailsComponents extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const SizedBox(
-          height: 25,
-        ),
+        // const SizedBox(
+        //   height: 25,
+        // ),
         BookDetailsImage(
           imageUrl: book.volumeInfo.imageLinks.thumbnail,
         ),

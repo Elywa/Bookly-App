@@ -21,11 +21,14 @@ class SimilarBooksListView extends StatelessWidget {
               itemCount: state.books.length,
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
-                return  Padding(
+                return Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 4),
                   child: SizedBox(
                     width: 90,
-                    child: BookDetailsImage(imageUrl: state.books[index].volumeInfo.imageLinks.thumbnail,),
+                    child: BookDetailsImage(
+                      imageUrl:
+                          state.books[index].volumeInfo.imageLinks.thumbnail,
+                    ),
                   ),
                 );
               }),

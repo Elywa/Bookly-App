@@ -9,9 +9,9 @@ class AuthorName extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       name,
-      textAlign: TextAlign.center,
-      style: Styles.textStyle16
-          .copyWith(fontFamily: kfontFamily, fontStyle: FontStyle.italic),
+      textAlign: TextAlign.start,
+      style: Styles.textStyle16.copyWith(
+          fontFamily: kfontFamily, fontStyle: FontStyle.italic, fontSize: 14),
     );
   }
 }
