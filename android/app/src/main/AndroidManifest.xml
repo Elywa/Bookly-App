@@ -1,11 +1,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<<<<<<< HEAD
 <queries>
+=======
+<uses-permission android:name="android.permission.INTERNET" />
+
+<queries>
+  <!-- If your app checks for SMS support -->
+>>>>>>> 329f539c7d5c10f250bb1858ce6c4459bdcd9563
   <intent>
     <action android:name="android.intent.action.VIEW" />
     <data android:scheme="https" />
   </intent>
+<<<<<<< HEAD
 </queries>
 <uses-permission android:name="android.permission.INTERNET"/>
+=======
+
+</queries>
+>>>>>>> 329f539c7d5c10f250bb1858ce6c4459bdcd9563
     <application
         android:label="bookly_app"
         android:name="${applicationName}"

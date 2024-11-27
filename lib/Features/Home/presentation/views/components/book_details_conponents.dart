@@ -24,9 +24,20 @@ class BookDetailsComponents extends StatelessWidget {
         const SizedBox(
           height: 30,
         ),
-        BookNameBestSeller(
-          bookName: book.volumeInfo.title ?? 'UnKnown',
+        SizedBox(
+          width: MediaQuery.of(context).size.width,
+          child: Text(book.volumeInfo.title ?? 'UnKnown',
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(
+                color: Color.fromARGB(255, 13, 175, 37),
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Zilla Slab',
+              )),
         ),
+
         const SizedBox(
           height: 15,
         ),
@@ -43,9 +54,6 @@ class BookDetailsComponents extends StatelessWidget {
             ),
             RatingPeople(),
           ],
-        ),
-        const SizedBox(
-          height: 15,
         ),
       ],
     );

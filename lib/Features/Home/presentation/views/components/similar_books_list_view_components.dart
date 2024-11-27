@@ -11,6 +11,9 @@ class SimilarBooksListViewComponents extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        const SizedBox(
+          height: 5,
+        ),
         Text(
           'You can also like',
           style: Styles.textStyle14.copyWith(
@@ -18,7 +21,7 @@ class SimilarBooksListViewComponents extends StatelessWidget {
           ),
         ),
         const SizedBox(
-          height: 6,
+          height: 10,
         ),
         const SizedBox(
           height: 15,

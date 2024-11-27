@@ -45,9 +45,12 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 329f539c7d5c10f250bb1858ce6c4459bdcd9563
 	<key>LSApplicationQueriesSchemes</key>
 <array>
   <string>https</string>

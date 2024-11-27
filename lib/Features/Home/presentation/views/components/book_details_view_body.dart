@@ -38,9 +38,16 @@ class BookDetailsViewBody extends StatelessWidget {
                 BookDetailsComponents(
                   book: book,
                 ),
-                const BooksActionButton(),
-                SizedBox(
+
+                // const BooksActionButton(),
+                const SizedBox(
                   height: 15,
+                ),
+                BooksActionButton(
+                  book: book,
+                ),
+                const SizedBox(
+                  height: 20,
                 ),
                 SimilarBooksListViewComponents(
                   book: book,
